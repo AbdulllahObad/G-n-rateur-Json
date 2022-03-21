@@ -1,0 +1,102 @@
+
+
+body {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+.container1{
+
+    display:inline-flex;
+    display: inline-block;
+    width: 41%;
+    
+}
+.form{
+
+    float: left;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}.form2{
+
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.toutesPersonnages {
+    height: 80%;
+    padding: 2%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.personnage {
+    display: inline-block;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+img{
+    border-radius: 8px; 
+}
+.ligne{
+    display: block;
+}
+@media screen and (max-width:1480px){
+
+
+}
+@media screen and (min-width:1480px){
+
+    .form{
+
+        float: left;
+
+    }
+    .ens,.div-btn-attribut{
+        border:1px solid;
+        width: 170px;
+        float: left;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .div-valide{
+        width: 170px;
+        float: left;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .div-valide input{
+
+        width: 50%;
+        float: left;
+
+    }
+    .but{
+
+        height: 100%;
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+
+    }
+    button,input[type=submit]{
+
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+        border:1px solid transparent;
+        border-radius:2px;
+        margin: 1px;
+        width: 100%;
+
+    }
+    button:hover,input[type=submit]:hover{
+
+        background:#135313;}
+
+}
