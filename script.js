@@ -54,7 +54,7 @@ $(document).ready(function(){
                 form.append(input);
               }
               form.append($("<input type='hidden' name='id' value='"+id_perso+"'>"))
-              form.append($("<input type='submit' name='modif_attribut'>"));
+              form.append($("<input type='submit' name='modif_attribut' value='rhf'>"));
               $(".attributperso").append(form);
     
         });

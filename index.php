@@ -98,6 +98,7 @@ session_start();
                        $_SESSION['json']['possibilites'][strval($i + 1)] = ["fichier" => ""];
                    }
                    file_put_contents('temp_fichier.json',json_encode($_SESSION['json']));
+                   header("Refresh:0");
                }
                if (!empty($_SESSION['json']['colonne']) && !empty($_SESSION['json']['ligne'])) {
                    $taille_colonne = $_SESSION['json']['colonne'];
@@ -146,6 +147,7 @@ session_start();
                  }
              }
              file_put_contents('temp_fichier.json', json_encode($_SESSION['json']));
+             header("Refresh:0");
          }
          if (!empty($_POST['modif_attribut'])) {
              $perso_current = $_SESSION['json']["possibilites"][$_POST['id']];
@@ -157,6 +159,7 @@ session_start();
                  }
              }
              file_put_contents('temp_fichier.json', json_encode($_SESSION['json']));
+             header("Refresh:0");
          }
          ?>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
