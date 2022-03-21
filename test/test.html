@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>QuiEstCe</title>
+        <meta name="description" content="this is our play" />
+        <link rel="stylesheet" href="css2.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="gris"></div>
+    <div class="div_attribut">
+            <div><button class="vider">Vider</button></div>
+            <div><button class="ajouter">Ajouter</button></div>
+            <form action="" method="post" class="form_attribut">
+                <input type="texte" name="attribut[]" value=fichier><input type="texte" name="attribut[]" value=cheveux><input type="submit" name="valide_attribut" value="Valider">
+            </form>
+        </div>
+    <div class="container">
+    
+        <div class="attributperso"></div>
+        <div class="nbr">
+            <form action="" method="post">
+                <div class="ens">
+                    <label for="ndc">Nombre de colonnes : </label>
+                    <br>
+                    <input type="text" required placeholder="Nombre de colonnes" id="ndc" name="ndc">
+                </div>
+                <div class="ens">
+                    <label for="ndl">Nombre de lignes : </label>
+                    <br>
+                    <input type="text" required placeholder="Nombre de lignes" id ="ndl"name="ndl">
+                </div>
+                <div class="div-valide" style="width: 220px;">
+                    <div style="height:50%;">
+                        <input class="but" type="button" value="Entrez attributs">
+                        <form action="" method="post">
+                            <input style="height:100%;"type="submit" value="Vider" name="vider">
+                        </form>
+                    </div>
+                    <input style="width: 100%;height: 50%;"name = "valider" type="submit" value="Validation grille">
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="toutesPersonnages">
+                            <div class="ligne">
+                                    <div class='personnage' id=1 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=2 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=3 style="display:inline-flex;" ><img src='' alt=""></div>
+                                    </div>
+                                <div class="ligne">
+                                    <div class='personnage' id=4 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=5 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=6 style="display:inline-flex;" ><img src='' alt=""></div>
+                                    </div>
+                                <div class="ligne">
+                                    <div class='personnage' id=7 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=8 style="display:inline-flex;" ><img src='' alt=""></div>
+                                        <div class='personnage' id=9 style="display:inline-flex;" ><img src='' alt=""></div>
+                                    </div>
+                        </div>
+
+    </div>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
