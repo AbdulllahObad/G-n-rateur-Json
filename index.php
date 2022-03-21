@@ -120,6 +120,8 @@ session_start();
              $_SESSION['json']['colonne'] = 0;
              $_SESSION['json']['ligne'] = 0;
              $_SESSION['json']['possibilites'] = null;
+             file_put_contents('temp_fichier.json',json_encode($_SESSION['json']));
+             header("Refresh:0");
          }
          /*if(!empty($_POST['reset'])){
          $_SESSION['json']['possibilites']=NULL;
